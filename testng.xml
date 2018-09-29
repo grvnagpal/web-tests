@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite Name" parallel="methods" thread-count="20">
+
+    <test name="OpenWeatherMap Tests">
+        <classes>
+         	<class name="com.weather.e2e.OpenWeatherMapBrokenLinkTest" />
+         	<class name="com.weather.e2e.OpenWeatherMapInvalidCityTest" />
+         	<class name="com.weather.e2e.OpenWeatherMapLabelTest" />
+         	<class name="com.weather.e2e.OpenWeatherMapValidCityTest" />
+        </classes>
+    </test>
+    
+</suite>

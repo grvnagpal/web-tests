@@ -1,0 +1,9 @@
+### Maven template
+target/
+.idea/
+*.iml
+test-output/*
+
+.project
+.settings
+.classpath
