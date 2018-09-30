@@ -19,15 +19,13 @@ import org.testng.annotations.Test;
 public class OpenWeatherMapInvalidCityTest {
 
 	private WebDriver driver;
-	private Properties properties = new Properties();
 	public static Logger LOG = Logger.getLogger(OpenWeatherMapInvalidCityTest.class);
 
 	@BeforeMethod
 	public void setUp() throws Exception {
 		BasicConfigurator.configure();
-		System.setProperty("webdriver.chrome.driver", "src/test/resources/chrome/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		driver = new ChromeDriver();
-		properties.load(new FileReader(new File("test.properties")));
 	}
 
 	@AfterMethod
