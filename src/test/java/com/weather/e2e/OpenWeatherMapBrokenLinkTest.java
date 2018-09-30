@@ -27,7 +27,7 @@ public class OpenWeatherMapBrokenLinkTest {
 	@BeforeTest
 	public void setUp() throws Exception {
 		BasicConfigurator.configure();
-		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/src/test/resources/chrome/chromedriver");
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.addArguments("--headless");
                 chromeOptions.addArguments("--no-sandbox");
