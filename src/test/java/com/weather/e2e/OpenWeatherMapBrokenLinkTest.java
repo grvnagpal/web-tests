@@ -13,6 +13,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import org.testng.annotations.AfterTest;
@@ -27,7 +28,9 @@ public class OpenWeatherMapBrokenLinkTest {
 	public void setUp() throws Exception {
 		BasicConfigurator.configure();
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-		driver = new ChromeDriver();
+		ChromeOptions ChromeOptions = new ChromeOptions();
+		ChromeOptions.addArguments("--headless", "window-size=1024,768", "--no-sandbox");
+		driver = new ChromeDriver(ChromeOptions);
 	}
 
 	@AfterTest
