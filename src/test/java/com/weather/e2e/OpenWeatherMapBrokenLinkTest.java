@@ -28,7 +28,11 @@ public class OpenWeatherMapBrokenLinkTest {
 	public void setUp() throws Exception {
 		BasicConfigurator.configure();
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-                driver = new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--disable-extensions"); // disabling extensions
+		options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+		options.addArguments("--no-sandbox"); // Bypass OS security model
+		driver = new ChromeDriver(options);
 	}
 
 	@AfterTest
