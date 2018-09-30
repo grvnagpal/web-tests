@@ -26,8 +26,8 @@ public class OpenWeatherMapBrokenLinkTest {
 	@BeforeTest
 	public void setUp() throws Exception {
 		BasicConfigurator.configure();
-		System.setProperty("webdriver.gecko.driver", "src/test/resources/chrome/geckodriver");
-		driver = new FirefoxDriver();
+		System.setProperty("webdriver.chrome.driver", "src/test/resources/chrome/chromedriver");
+		driver = new ChromeDriver();
 	}
 
 	@AfterTest
