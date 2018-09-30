@@ -21,7 +21,7 @@ public class OpenWeatherMapValidCityTest {
 	@BeforeMethod
 	public void setUp() throws Exception {
 		BasicConfigurator.configure();
-		System.setProperty("webdriver.chrome.driver", "src/test/resources/chrome/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		driver = new ChromeDriver();
 	}
 
