@@ -28,7 +28,7 @@ public class OpenWeatherMapBrokenLinkTest {
 	public void setUp() throws Exception {
 		BasicConfigurator.configure();
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-                WebDriver driver = new ChromeDriver();
+                driver = new ChromeDriver();
 	}
 
 	@AfterTest
