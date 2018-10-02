@@ -22,7 +22,7 @@ public class OpenWeatherMapLabelTest {
 	@BeforeMethod
 	public void setUp() throws Exception {
 		BasicConfigurator.configure();
-		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/src/test/resources/chromedriver.exe");
 		driver = new ChromeDriver();
 	}
 
